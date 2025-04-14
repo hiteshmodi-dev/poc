@@ -1,24 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { LifeCycleFunction } from './components/LifeCycleFunction';
+import { UseRefComponent } from './components/UseRefComponent';
+import { ContextApiComponent } from './components/ContextApiComponent';
+import UseReducer from './components/UseReducer';
+import FetchDataComponent from './POC/DataComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FetchDataComponent />
+    // <UseReducer />
+    // <ContextApiComponent />
+    // <UseRefComponent />
+    // <LifeCycleFunction />
   );
 }
 
